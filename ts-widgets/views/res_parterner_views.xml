@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="partner_view_buttons">
+            <field name="name">partner.view.buttons</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="priority" eval="11"/>
+            <field name="arch" type="xml">
+                <field name="zip" position="replace">
+                    <field name="zip" widget="ts-zip-field" placeholder="ZIP" class="o_address_zip"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
